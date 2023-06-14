@@ -1,9 +1,14 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import Experience from './Experience';
+import ExperienceCard from './Experience';
+import { Experience } from '@/typings';
 
-function Work() {
+type Props = {
+  experiences: Experience[];
+};
+
+function Work({ experiences }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -20,10 +25,13 @@ function Work() {
         className='flex w-full space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory
        scrollbar-thin scrollbar-track-gray/20 scrollbar-thumb-[#F7AB0A]-80'
       >
-        <Experience />
-        <Experience />
-        <Experience />
-        <Experience />
+        {experiences?.map(experience => {
+          return <ExperienceCard key={experience._id} experience={experience} />;
+        })}
+        {/* <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard /> */}
       </div>
     </motion.div>
   );
