@@ -28,10 +28,6 @@ function Work({ experiences }: Props) {
         {experiences?.map(experience => {
           return <ExperienceCard key={experience._id} experience={experience} />;
         })}
-        {/* <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard /> */}
       </div>
     </motion.div>
   );
