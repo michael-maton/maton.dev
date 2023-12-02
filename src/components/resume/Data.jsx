@@ -1,0 +1,55 @@
+const Data = [
+  {
+    id: 1,
+    category: 'education',
+    icon: 'icon-graduation',
+    year: '2020 - 2021',
+    title: 'Bloom Institute of Technology',
+    desc: 'Unlocked the art of code to craft digital solutions and explore the ever-evolving tech landscape in this intensive software engineering program that provides an immersive and hands-on curriculum in computer science and full-stack web development',
+  },
+  {
+    id: 2,
+    category: 'education',
+    icon: 'icon-graduation',
+    year: '2013 - 2017',
+    title: 'North Central College',
+    desc: 'Unveiled the secrets of the universe with a Bachelor’s Degree in Physics and a Mathematics minor, fostering a deep fascination for the interplay between natural laws and numerical intricacies',
+  },
+  // {
+  //   id: 3,
+  //   category: "education",
+  //   icon: "icon-graduation",
+  //   year: "2009 - 2013",
+  //   title: "Honours Degree",
+  //   desc: "Lorem ipsum dolor sit amet quo ei simul congue exerci     ad nec admodum perfecto.",
+  // },
+  {
+    id: 4,
+    category: 'experience',
+    icon: 'icon-briefcase',
+    year: '2023 -',
+    title: 'Quality Assurance',
+    company: 'Welocalize',
+    desc: 'Evaluated data with precision, trained language models, and optimized AI code for quality and industry standards',
+  },
+  {
+    id: 5,
+    category: 'experience',
+    icon: 'icon-briefcase',
+    year: '2021 - 2023',
+    title: 'Data Engineer / Developer',
+    company: 'NonFungible',
+    desc: 'Developed WordPress solutions, expanded databases for detailed analysis, curated NFT metadata, and enhanced media processing efficiency',
+  },
+  {
+    id: 6,
+    category: 'experience',
+    icon: 'icon-briefcase',
+    year: '2021',
+    title: 'Full-Stack Intern',
+    company: 'HRF: Blue Witness',
+    desc: "Enhanced site design collaboratively with front-end developers, fixed bugs for a cleaner user experience, and adapted back-end for compatibility with the Data Science team's new data model",
+  },
+];
+
+export default Data;
