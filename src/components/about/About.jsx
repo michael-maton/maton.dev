@@ -3,7 +3,7 @@ import './about.css';
 import Image from '../../assets/avatar-2.svg';
 // import AboutBox from './AboutBox';
 import Resume from '../../assets/resume.pdf';
-import Dots from '../../assets/dots-bg.svg';
+// import Dots from '../../assets/dots-bg.svg';
 
 const About = () => {
   return (

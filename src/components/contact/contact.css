@@ -13,6 +13,20 @@
   text-align: center;
 }
 
+.contact__details {
+  box-shadow: var(--shadow);
+  background-color: hsl(164, 54%, 63%);
+  color: #f8f9fa;
+  border-radius: var(--border-radius);
+  margin: 2rem 0.5rem 0 0.5rem;
+  padding: 1.875rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact__form {
+  padding: 0 2rem 4rem 0;
+}
+
 .contact__form-group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -55,6 +69,10 @@
     justify-content: center;
   }
 
+  .contact__form {
+    padding-right: 0rem;
+  }
+
   .contact__form-group {
     grid-template-columns: 1fr;
   }
@@ -68,6 +86,10 @@
 
   .contact__info {
     text-align: center;
+  }
+
+  .section__title {
+    margin-bottom: 2rem;
   }
 }
 
