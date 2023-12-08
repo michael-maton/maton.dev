@@ -7,31 +7,29 @@ import Image3 from '../../assets/service-3.svg';
 const data = [
   {
     id: 1,
-    image: Image1,
-    title: 'UI/UX design',
-    description:
-      'Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.',
+    image: Image2,
+    title: 'Developer',
+    description: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget. ',
   },
   {
     id: 2,
-    image: Image2,
-    title: 'Web Development',
+    image: Image1,
+    title: 'Cloud Enthusiast',
     description:
-      'Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.',
+      'Traversing the skies of cloud computing, my newfound passion is exploring the horizon of cloud solutions. My pursuit includes acquiring proficiency in constructing scalable, resilient infrastructures.',
   },
   {
     id: 3,
     image: Image3,
-    title: 'Photography',
-    description:
-      'Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.',
+    title: 'Disc Golfer',
+    description: 'Beyond the screen, you will most likely find me on the disc golf course. ',
   },
 ];
 
 const Services = () => {
   return (
     <section className="services container section" id="services">
-      <h2 className="section__title">Services</h2>
+      {/* <h2 className="section__title">Downtime?</h2> */}
 
       <div className="services__container grid">
         {data.map(({ id, image, title, description }) => {

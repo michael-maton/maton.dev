@@ -27,6 +27,9 @@ const Portfolio = () => {
         <span className="work__item" onClick={() => filterItem('Mobile')}>
           Mobile
         </span>
+        <span className="work__item" onClick={() => filterItem('Cloud')}>
+          Cloud
+        </span>
         {/* <span className="work__item" onClick={() => filterItem('Design')}>
           Design
         </span> */}
@@ -50,12 +53,7 @@ const Portfolio = () => {
               </div>
               {/* <span className="work__category">{category}</span> */}
               <h3 className="work__title">{title}</h3>
-              <a
-                href={elem.url}
-                target="_blank"
-                rel="noreferrer"
-                className="work__button"
-              >
+              <a href={elem.url} target="_blank" rel="noreferrer" className="work__button">
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
                 {/* <i className="icon-link work__button-icon"></i> */}
               </a>

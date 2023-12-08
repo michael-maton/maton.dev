@@ -1,10 +1,33 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './sidebar.css';
 // import Logo from '../../assets/logo.svg';
 // import flowers from '../../assets/flowers.svg';
 
 const Sidebar = () => {
   const [toggle, showMenu] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        showMenu(false);
+      }
+    };
+
+    if (toggle) {
+      document.addEventListener('mousedown', handleOutsideClick);
+    } else {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, [toggle]);
+
+  const handleMenuToggle = () => {
+    showMenu((prevState) => !prevState);
+  };
   return (
     <>
       <aside className={toggle ? 'aside show-menu' : 'aside'}>
@@ -66,15 +89,10 @@ const Sidebar = () => {
           </div>
         </nav>
 
-        <div className="nav__footer">
-          {/* <span className="copyright">&copy; 2022 - 2023.</span> */}
-        </div>
+        <div className="nav__footer">{/* <span className="copyright">&copy; 2022 - 2023.</span> */}</div>
       </aside>
 
-      <div
-        className={toggle ? 'nav__toggle nav__toggle-open' : 'nav__toggle'}
-        onClick={() => showMenu(!toggle)}
-      >
+      <div ref={menuRef} className={toggle ? 'nav__toggle nav__toggle-open' : 'nav__toggle'} onClick={handleMenuToggle}>
         <i className="icon-menu"></i>
       </div>
     </>

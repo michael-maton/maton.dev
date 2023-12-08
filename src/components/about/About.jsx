@@ -22,26 +22,11 @@ const About = () => {
         <div className="about__data">
           <div className="about__info">
             <p className="about__description">
-              I'm Michael — an experienced software developer with a background
-              in physics and mathematics. Skilled in backend development and
-              designing efficient and user-friendly systems. Dedicated to
-              creating high-quality code through continuous integration and
-              testing. I'm Michael — an experienced software developer with a
-              background in physics and mathematics. Skilled in backend
-              development and designing efficient and user-friendly systems.
-              Dedicated to creating high-quality code through continuous
-              integration and testing. I'm Michael — an experienced software
-              developer with a background in physics and mathematics. Skilled in
-              backend development and designing efficient and user-friendly
-              systems. Dedicated to creating high-quality code through
-              continuous integration and testing.
+              I'm Michael — an experienced software developer with a background in physics and mathematics. Skilled in backend development and designing efficient and user-friendly systems. Dedicated
+              to creating high-quality code through continuous integration and testing.
             </p>
             <a href={Resume} className="btn" target="_blank" rel="noreferrer">
-              Download CV{' '}
-              <i
-                className="fa-solid fa-arrow-up-right-from-square"
-                style={{ marginLeft: '8px' }}
-              ></i>
+              Download CV <i className="fa-solid fa-arrow-up-right-from-square" style={{ marginLeft: '8px' }}></i>
             </a>
           </div>
 

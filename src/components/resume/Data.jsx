@@ -39,7 +39,7 @@ const Data = [
     year: '2021 - 2023',
     title: 'Data Engineer / Developer',
     company: 'NonFungible',
-    desc: 'Developed WordPress solutions, expanded databases for detailed analysis, curated NFT metadata, and enhanced media processing efficiency',
+    desc: 'Developed software solutions, expanded databases for detailed analysis, enhanced media processing efficiency, and managed NFT project listings',
   },
   {
     id: 6,

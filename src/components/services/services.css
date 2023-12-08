@@ -41,6 +41,10 @@
 }
 
 .services__description {
+  font-size: var(--small-font-size);
+}
+
+.services__description {
   color: #f8f9fa;
 }
 
